@@ -1,0 +1,101 @@
+<!Doctype html>
+<html>
+<head>
+    <title>Azme ~ Inicio</title>
+<style>
+    body {
+	margin: 0;
+	padding: 0;
+    	background-color: #ffff;
+    	box-sizing: border-box;
+        color:black;
+}
+
+.sometext {
+	font-family: Tahoma;
+	font-size: 2.5rem;
+	text-transform: uppercase;
+    	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    text-align:center;
+	flex-direction: column;
+	min-height: 50vh;
+    height:100vh;
+    width:100vw;     
+}
+
+@media (max-width: 780px) {
+    .sometext {
+	font-size: 1.2rem;
+	color: rgb(150, 20, 200);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	min-height: 50vh; 
+    }
+}
+.mydiv {
+	position: relative;
+	margin: 10% auto 0;
+	width: 100vw;
+	height: 100vh;
+    
+}
+
+h1:before {
+	content: '';
+	animation: changingTxt 4s linear infinite;
+}
+
+@keyframes changingTxt {
+	0% {
+		content: 'azme ~ haciendote el dia';
+	}
+	20% {
+		content: 'azme Ofertas';
+	}
+	40% {
+		content: 'azme Reir';
+	}
+	60% {
+		content: 'azme Jugar';
+	}
+	80% {
+		content: 'azme entretenerme';
+	}
+	100% {
+		content: 'azme ~ Haciendote el dia';
+	}
+}
+
+
+.animate-bg:after {
+	filter: brightness(1.4);
+	filter: drop-shadow(16px 16px 20px rgb(248, 220, 97));
+	filter: blur(15px);
+}
+
+.home{
+    width:100vw;
+    height:100vh;
+}
+
+
+.bgh{
+
+}
+</style>
+</head>
+<body>
+         
+        <div class="mydiv animate-bg sometext" style="color:black;"> 
+            <h1 style="color:black;">.</h1>        
+        </div>
+<div class="home bgh"></div>
+</body>
+</html>
+
+<!--Version 0.0.1-->
